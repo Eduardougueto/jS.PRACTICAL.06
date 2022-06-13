@@ -28,36 +28,46 @@ function calcularAreaCuadrado() {
 
 //CODIGO/FORMULA TRIANGULO
    
-    function perimetroTriangulo(lado1, lado2, base) {
-        return lado1 + lado2 + base;
+    function perimetroTriangulo(lado1, base) {
+        return lado1 + lado1 + base;
     }
 
-    function areaTriangulo(base, altura) {
-        return (base * altura) / 2;
+    function areaTriangulo(base, lado1) {
+        const baseMit = base / 2;
+        // ELEVADOS AL CUADRADO
+        const baseAlCuadrado = baseMit * baseMit;
+        const HipAlCuadrado = lado1 * lado1;
+        // ELEVADOS AL CUADRADO
+        const baseRestaHipo = HipAlCuadrado - baseAlCuadrado;
+        const RaizBaseHipo = Math.sqrt(baseRestaHipo);
+        return RaizBaseHipo.toFixed(2);
+        // return (base * altura) / 2;
     }    
     
+    
+
 // INTERACCION CON HTML - TRIANGULO
 function calcularPerimetroTriangulo() {
-    //LADO 1
+    //LADO 1 - 2
     const input1 = document.getElementById("InputTriangulo1");
     const value1 = Number(input1.value); 
-    // LADO 2
-    const input2 = document.getElementById("InputTriangulo2");
-    const value2 = Number(input2.value); 
     // BASE
     const inputBase = document.getElementById("InputTrianguloBase");
-    const value3 = Number(inputBase.value); 
+    const value2 = Number(inputBase.value); 
     
-    const perimetro = perimetroTriangulo(value1, value2, value3);
+    const perimetro = perimetroTriangulo(value1, value2);
     alert( "El perimetro del triangulo mide " + perimetro + "cm");
 }
 
 function calcularAreaTriangulo() {
+    //LADO 1 - 2
+    const input1 = document.getElementById("InputTriangulo1");
+    const value1 = Number(input1.value);
+    // BASE
     const inputBase = document.getElementById("InputTrianguloBase");
-    const valueBase = inputBase.value;
-    const inputAltura = document.getElementById("InputTrianguloAltura");
-    const valueAltura = inputAltura.value;
-    const area = areaTriangulo(valueBase, valueAltura);
+    const valueBase = Number(inputBase.value);
+    
+    const area = areaTriangulo(valueBase, value1);
     alert( "El area del triangulo mide " + area + "cm");
 }
 
@@ -73,12 +83,13 @@ function calcularAreaTriangulo() {
 // CIRCUNFERENCIA
     function perimetroCirculo(radio) {
         const diametro = diametroCirculo(radio);
-        return diametro * PI;
+        const diamePorPi = diametro * PI;
+        return diamePorPi.toFixed(2);
     }
    
 //AREA
     function areaCirculo(radio) {
-        return (radio * radio) * PI;
+        return (radio * radio) * PI.toFixed(2);
     }
     
         //
