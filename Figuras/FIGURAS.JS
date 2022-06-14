@@ -40,7 +40,8 @@ function calcularAreaCuadrado() {
         // ELEVADOS AL CUADRADO
         const baseRestaHipo = HipAlCuadrado - baseAlCuadrado;
         const RaizBaseHipo = Math.sqrt(baseRestaHipo);
-        return RaizBaseHipo.toFixed(2);
+        const baseValue = (base * RaizBaseHipo) / 2;
+        return baseValue.toFixed(2);
         // return (base * altura) / 2;
     }    
     
