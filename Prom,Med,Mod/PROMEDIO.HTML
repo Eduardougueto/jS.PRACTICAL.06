@@ -8,19 +8,22 @@
 </head>
 <body>
 
-    <h1> Promedio</h1>
+    <section>
+        <h2> Calcula el promedio.</h2>
+        <form action="">
+            <label for="InputSalario"> Ingresa los valores para calcular el promedio entre estos. Ingresa el valor, presiona el boton "Añadir numero", limpia la caja de texto y ve colocando los valores a los que les quieras calcular el promedio. </label>
+            <div>
+                <input type="number" id="InputSalario" placeholder="Coloca los numeros">
+            </div>
 
-    <form>
-        <label for="InputPromedio"> Escribe un numero para el promedio: </label>
-        <input type="number" placeholder="Ej: 20, 10, 50" id="InputPromedio">
+            <button onclick="buttonInputSalario()" type="button"> Añadir numero </button>
+            <p id="ResultA"></p>
 
-        <button type="button" onclick="onClickCalcAverage()"> 
-            Calcular el promedio
-        </button>
-
-        <p id="ResultPr"></p>
-
-    </form>
+            <button onclick="buttonPromedio()" type="button"> Calcular Promedio </button>
+            <p id="ResultB"></p>
+        </form>
+    </section>
+   
 
 <script src="./PROMEDIO.JS"></script>
 </body>
