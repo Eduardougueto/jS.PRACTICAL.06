@@ -72,9 +72,15 @@ button {
 }
 /* SECCION DE FIGURAS. 1 -- */ 
 /* SECCION DE DESCUENTOS. 2 -- */ 
+#identifier-2 {
+    background-color: rgb(219, 225, 230);
+    height: 110px;
+    padding: 20px;
+    font-size: 1.3rem;
+}
 #Discount-container {
     text-align: center;
-    margin-top: 80px;
+    margin-top: 20px;
     padding-top: 75px;
     background-color: aliceblue;
     height: 250px;
@@ -95,4 +101,64 @@ button {
     font-size: 1.5rem;
 }
 /* SECCION DE DESCUENTOS. 2 -- */ 
+/* SECCION DE PROMEDIO. 3 -- */ 
+#identifier-3 {
+    margin-top: 25px;
+    background-color: rgb(62, 65, 92);
+    color: rgb(242, 255, 215);
+    height: 110px;
+    padding: 20px;
+    font-size: 1.3rem;
+}
+#Average-container {
+    margin: 20px 15px;
+    color: rgb(242, 255, 215);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 510px;    
+    gap: 10px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+#med-B {
+    /* height: 500px; */
+    padding-top: 40px;
+    text-align: center;
+    background-color: rgb(62, 65, 92);
+    border: 1px solid rgb(0, 139, 125);
+    border-radius: 15px;
+}
+#Average-container label {
+    font-size: 1.3rem;
+}
+#Average-container input {
+    border-radius: 7px;
+    padding: 2px;
+    width: 150px;
+}
+#Average-container h1 {
+    font-size: 1.8rem;
+}
+#ResultB {
+    font-size: 1.3rem;
+}
+/* MEDIANA */
+#med-B-b {
+    padding-top: 80px;
+    text-align: center;
+    background-color: rgb(62, 65, 92);
+    border: 1px solid rgb(0, 139, 125);
+    border-radius: 15px;
+}
+#ResultMediana {
+    font-size: 1.3rem;
+}
+/* MODA */
+#med-B-c {
+    padding-top: 80px;
+    text-align: center;
+    background-color: rgb(62, 65, 92);
+    border: 1px solid rgb(0, 139, 125);
+    border-radius: 15px;
+}
 /* SECCION DE PROMEDIO. 3 -- */ 

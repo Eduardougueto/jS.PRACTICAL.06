@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./FIGURAS.CSS">
-    <title> Figuras Geométricas | Curso practico JS</title>
+    <title>| Curso practico JS</title>
 </head>
 <body>
     <header>
@@ -93,8 +93,13 @@
 <!-- SECCION DE FIGURAS . 1 -->
 
 <!-- SECCION DE DESCUENTOS . 2 -->
+<div id="identifier-2">
+    <h1>
+        Porcentajes y descuentos. 
+    </h1>
+    <p>Segundo taller basico de JS con Platzi</p>
+</div>
 <section id="Discount-container">
-    <h2> Porcentajes y descuentos. </h2>
     <h2> Calcula el precio a pagar de tus productos con descuentos </h2>
         <form>
             <label for="InputPrice"> Escribe el precio de tu producto: </label>
@@ -113,9 +118,69 @@
 <!-- SECCION DE DESCUENTOS . 2 -->
 
 <!-- SECCION DE PROMEDIO . 3 -->
+<div id="identifier-3">
+    <h1>
+        Promedio, Mediana y Moda. 
+    </h1>
+    <p>Tercer taller basico de JS con Platzi</p>
+</div>
+<section id="Average-container">
+    <!-- MEDIA ARITMETICA -->
+    <section id="med-B">
+        <form>
+            <h2> Calcula el promedio.</h2>
+            <label for="InputSalario"> Ingresa los valores para calcular el promedio entre estos. Ingresa el valor, presiona el boton "Añadir numero", limpia la caja de texto y ve colocando los valores a los que les quieras calcular el promedio. </label>
+            <div>
+                <input type="number" id="InputSalario" placeholder="Coloca los numeros">
+            </div>
 
+            <button onclick="buttonInputSalario()" type="button"> Añadir numero </button>
+            <p id="ResultA"></p>
+
+            <button onclick="buttonPromedio()" type="button"> Calcular Promedio </button>
+            <p id="ResultB"></p>
+        </form>
+    </section>
+    <!-- MEDIA ARITMETICA -->
+    <!-- MEDIANA -->
+    <section id="med-B-b">
+        <form>
+        <h1> Calculando la Mediana</h1>
+            <label for="InputMediana">
+                Ingresa los valores para calcular la mediana separándolos con una ",". </label>
+            <input type="text" placeholder="Ej: 20, 10, 50" id="InputMediana">
+            <button type="button" onclick="calcularMediana()">
+                 Calcular la Mediana 
+                </button>
+            <p id="ResultMediana"></p>
+        </form>
+    
+    </section>
+    <!-- MEDIANA -->
+    <!-- MODA -->
+    <section id="med-B-c">
+        <form>
+            <h1>Calcular la Moda: </h1>
+            <label for="InputModa">
+                Ingresa tus valores para calcular:
+            </label>
+            <input type="text" id="InputModa" placeholder="Ej: 10, 20, 30">
+            <button type="button" onclick="CalcularModa()">
+                Calcular la Moda
+            </button>
+            <p id="ResultM"></p>
+        </form>
+    </section>
+    <!-- MODA -->
+
+</section>
+<!-- MEDIA ARITMETICA -->
 <!-- SECCION DE PROMEDIO . 3 -->
 <script src="./FIGURAS.JS"></script>
 <script src="./Descuentos.JS"></script>
+<script src="./Promedio.JS"></script>
+<script src="./Mediana.JS"></script>
+<script src="./Moda.JS"></script>
+
 </body>
 </html>
