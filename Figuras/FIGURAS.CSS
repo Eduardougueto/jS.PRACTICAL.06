@@ -70,3 +70,29 @@ button {
     border: 1px solid darkblue;
     border-radius: 15px;
 }
+/* SECCION DE FIGURAS. 1 -- */ 
+/* SECCION DE DESCUENTOS. 2 -- */ 
+#Discount-container {
+    text-align: center;
+    margin-top: 80px;
+    padding-top: 75px;
+    background-color: aliceblue;
+    height: 250px;
+    line-height: 1.6;
+}
+#Discount-container h2 {
+    font-size: 2rem;
+}
+#Discount-container label {
+    font-size: 1.3rem;
+}
+#Discount-container input {
+    border-radius: 7px;
+    padding: 2px;
+    width: 150px;
+}
+#ResultP {
+    font-size: 1.5rem;
+}
+/* SECCION DE DESCUENTOS. 2 -- */ 
+/* SECCION DE PROMEDIO. 3 -- */ 
