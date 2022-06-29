@@ -15,7 +15,8 @@ function calcularPerimetroCuadrado() {
     const value = input.value; 
 
     const perimetro = perimetroCuadrado(value);
-    alert( "El perimetro del cuadrado mide " + perimetro + "cm");
+    const ResultCuadrado = document.getElementById("ResultCu");
+    ResultCuadrado.innerText = "El perimetro del cuadrado mide " + perimetro + "cm";
 }
 
 function calcularAreaCuadrado() {
@@ -23,7 +24,8 @@ function calcularAreaCuadrado() {
     const value = input.value; 
     
     const area = areaCuadrado(value);
-    alert( "El area del cuadrado mide " + area + "cm");
+    const ResultCuadrado = document.getElementById("ResultCu");
+    ResultCuadrado.innerText = "El area del cuadrado mide " + area + "cm";
 }
 
 //CODIGO/FORMULA TRIANGULO
@@ -57,7 +59,8 @@ function calcularPerimetroTriangulo() {
     const value2 = Number(inputBase.value); 
     
     const perimetro = perimetroTriangulo(value1, value2);
-    alert( "El perimetro del triangulo mide " + perimetro + "cm");
+    const ResultTriangulo = document.getElementById("ResultTr");
+    ResultTriangulo.innerText = "El perimetro del Triángulo mide " + perimetro + "cm";
 }
 
 function calcularAreaTriangulo() {
@@ -69,7 +72,8 @@ function calcularAreaTriangulo() {
     const valueBase = Number(inputBase.value);
     
     const area = areaTriangulo(valueBase, value1);
-    alert( "El area del triangulo mide " + area + "cm");
+    const ResultTriangulo = document.getElementById("ResultTr");
+    ResultTriangulo.innerText = "El area del Triángulo mide " + area + "cm";
 }
 
 //CODIGO/FORMULA CIRCULO
@@ -99,13 +103,15 @@ function calcularPerimetroCirculo() {
     const inputC = document.getElementById("InputCirculo");
     const value = inputC.value;
     perimetro = perimetroCirculo(value);
-    alert( "El perimetro del circulo mide " + perimetro + "cm");
+    const ResultCirculo = document.getElementById("ResultCi");
+    ResultCirculo.innerText = "El perimetro del Círculo mide " + perimetro + "cm";
 }
 
 function calcularAreaCirculo() {
     const inputC = document.getElementById("InputCirculo");
     const value = inputC.value;
     area = areaCirculo(value);
-    alert( "El area del circulo mide " + area + "cm");
+    const ResultCirculo = document.getElementById("ResultCi");
+    ResultCirculo.innerText = "El area del Círculo mide " + area + "cm";
 }
 
